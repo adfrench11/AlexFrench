@@ -1,0 +1,154 @@
+<!-- Credit for free bulma templates? -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Alex French, Web Developer</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.6.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" integrity="sha256-2k1KVsNPRXxZOsXQ8aqcZ9GOOwmJTMoOB5o5Qp1d6/s=" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="hero is-fullheight is-default is-bold">
+
+      <!-- NAVBAR -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="../index.html">
+                <span>
+                  <h1 class="title is-4 is-uppercase">Alex French</h1>
+                </span>
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="tabs is-right">
+                  <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/index.html">Projects</a></li>
+                    <li><a href="../resume/index.html">Resume</a></li>
+                    <li class="is-active"><a>Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div> <!-- close hero-head -->
+
+      <!-- CONTENT -->
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-half">
+
+              <h5 class="title is-5">Thanks for getting in touch! You can <a href="mailto:adfrench11@gmail.com?Subject=Contact%20Form"><span class="icon">
+                <i class="fas fa-paper-plane"></i></span>email me</a> or fill out the form below.</h5>
+
+              <form action="//formspree.io/adfrench11@gmail.com" method="POST">
+
+                <div class="field">
+                  <label class="label">First name</label>
+                  <div class="control has-icons-left">
+                    <input class="input" type="text" name="firstname" placeholder="First" autofocus required>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Last name</label>
+                  <div class="control has-icons-left">
+                    <input class="input" type="text" name="lastname" placeholder="Last" required>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left">
+                    <input class="input" type="email" name="userEmail" placeholder="your.email@example.com" required>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">What's this message about?</label>
+                  <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="subject" value="professional" checked>
+                      I'd like to hire you!
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="subject" value="personal">
+                      Personal message
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="subject" value="other">
+                      Don't know/something else
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="marketing">How did you hear about me?</label>
+                  <div class="control">
+                    <div class="select">
+                      <select name="marketing">
+                        <optgroup label="Online">
+                          <!-- <option value="social">Social Media (FB, Twitter, LinkedIn)</option> -->
+                          <option value="github">Online Portfolio (GitHub)</option>
+                          <option value="search">Search Engine</option>
+                          <option value="email">Email</option>
+                        </optgroup>
+                        <optgroup label="In-Person">
+                          <option value="networking">We met at a networking event</option>
+                          <option value="referral">Personal referral</option>
+                          <option value="random">We met somewhere else</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea class="textarea" name="user_message" placeholder="Please enter a message"></textarea>
+                  </div>
+                </div>
+
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link" type="submit">Submit</button>
+                  </div>
+                </div>
+
+                <!-- <input type="submit"> -->
+              </form>
+
+            </div> <!-- close column -->
+          </div> <!-- close columns -->
+        </div> <!-- close container -->
+      </div> <!-- close hero-body -->
+    </section> <!-- close hero -->
+    <script type="text/javascript" src="js/burger.js"></script>
+  </body>
+</html>

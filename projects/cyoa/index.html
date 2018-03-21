@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Choose Your Own Adventure</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.6.2-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" integrity="sha256-2k1KVsNPRXxZOsXQ8aqcZ9GOOwmJTMoOB5o5Qp1d6/s=" crossorigin="anonymous" />
+  <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero is-fullheight is-light is-default">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-half has-text-centered">
+
+            <div id="cyoa-div">
+
+              <form>
+                <h4 id="prompt" class="title is-4"></h4>
+                <div class="field is-grouped is-grouped-centered">
+                  <div class="control">
+                    <button id="option-1" value="" class="button is-link is-medium is-rounded" tabindex="-1"></button>
+                  </div>
+                </div>
+                <div class="field is-grouped is-grouped-centered">
+                  <div class="control">
+                    <button id="option-2" value="" class="button is-link is-medium is-rounded" tabindex="-1"></button>
+                  </div>
+                </div>
+                <div class="field is-grouped is-grouped-centered">
+                  <div class="control">
+                    <button id="option-3" value="" class="button is-link is-medium is-rounded" tabindex="-1"></button>
+                  </div>
+                </div>
+                <input id="hidden-submit" type="submit">
+              </form>
+
+            </div> <!-- close cyoa-div -->
+
+          </div> <!-- close column -->
+        </div> <!-- close columns -->
+      </div> <!-- close container -->
+    </div> <!-- close hero-body -->
+  </section>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <!-- Run the adventure! -->
+  <script type="text/javascript" src="cyoa.js"></script>
+</body>
+</html>

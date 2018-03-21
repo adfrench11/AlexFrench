@@ -1,14 +1,72 @@
+<!-- Credit for free bulma templates? -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-
-  <h1>Welcome to My Portfolio!</h1>
-
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alex French, Web Developer</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.6.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" integrity="sha256-2k1KVsNPRXxZOsXQ8aqcZ9GOOwmJTMoOB5o5Qp1d6/s=" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="hero is-fullheight is-default is-bold">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <span>
+                  <h1 class="title is-4 is-uppercase">Alex French</h1>
+                </span>
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="tabs is-right">
+                  <ul>
+                    <li class="is-active"><a>Home</a></li>
+                    <li><a href="projects/index.html">Projects</a></li>
+                    <li><a href="resume/index.html">Resume</a></li>
+                    <li><a href="contact/index.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-vcentered">
+            <div class="column is-5">
+              <img src="pics/blues.jpg" alt="Alex French: Web Developer" width="480">
+            </div>
+            <div class="column is-6 is-offset-1">
+              <h1 class="title is-2">
+                Web Developer
+              </h1>
+              <h2 class="subtitle is-4">
+                Chattanooga, TN
+              </h2>
+              <p>
+                I made this site for TWP2, and I'm doing other cool things!
+              </p>
+              <br>
+              <p><a href=""><span class="icon"><i class="fab fa-github"></i></span>My Github</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/burger.js"></script>
+  </body>
 </html>
